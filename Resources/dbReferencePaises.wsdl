@@ -1,0 +1,38 @@
+<wsdl:definitions
+     name="dbReferencePaises"
+     targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaises"
+     xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaises"
+     xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/"
+     xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaises"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+  <plt:partnerLinkType name="dbReferencePaises_plt" >
+    <plt:role name="dbReferencePaises_role" >
+      <plt:portType name="tns:dbReferencePaises_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+  
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaises" schemaLocation="dbReferencePaises.xsd" />
+      </schema>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaises" schemaLocation="dbReferencePaises.xsd" />
+      </schema>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaises" schemaLocation="dbReferencePaises.xsd" />
+      </schema>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaises" schemaLocation="dbReferencePaises.xsd" />
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="dbReferencePaisesInput_msg">
+        <wsdl:part name="dbReferencePaisesInput_msg" element="db:dbReferencePaisesInput"/>
+    </wsdl:message>
+    <wsdl:portType name="dbReferencePaises_ptt">
+        <wsdl:operation name="dbReferencePaises">
+            <wsdl:input message="tns:dbReferencePaisesInput_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

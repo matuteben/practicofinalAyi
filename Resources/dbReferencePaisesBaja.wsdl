@@ -1,0 +1,28 @@
+<wsdl:definitions
+     name="dbReferencePaisesBaja"
+     targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaisesBaja"
+     xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaisesBaja"
+     xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/"
+     xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaisesBaja"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+  <plt:partnerLinkType name="dbReferencePaisesBaja_plt" >
+    <plt:role name="dbReferencePaisesBaja_role" >
+      <plt:portType name="tns:dbReferencePaisesBaja_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaisesBaja" schemaLocation="dbReferencePaisesBaja.xsd" />
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="dbReferencePaisesBajaInput_msg">
+        <wsdl:part name="dbReferencePaisesBajaInput_msg" element="db:dbReferencePaisesBajaInput"/>
+    </wsdl:message>
+    <wsdl:portType name="dbReferencePaisesBaja_ptt">
+        <wsdl:operation name="dbReferencePaisesBaja">
+            <wsdl:input message="tns:dbReferencePaisesBajaInput_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

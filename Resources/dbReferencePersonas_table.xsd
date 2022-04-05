@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/dbReferencePersonas" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/dbReferencePersonas" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="PersonasCollection" type="PersonasCollection"/>
+   <xs:complexType name="PersonasCollection">
+      <xs:sequence>
+         <xs:element name="Personas" type="Personas" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Personas">
+      <xs:sequence>
+         <xs:element name="dni" type="xs:double"/>
+         <xs:element name="nombre" type="string255" minOccurs="0" nillable="true"/>
+         <xs:element name="apellido" type="string255" minOccurs="0" nillable="true"/>
+         <xs:element name="pais" type="string255" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="dbReferencePersonasSelectInputParameters" type="dbReferencePersonasSelect"/>
+   <xs:complexType name="dbReferencePersonasSelect">
+      <xs:sequence/>
+   </xs:complexType>
+   <xs:element name="PersonasPrimaryKey" type="PersonasPrimaryKey"/>
+   <xs:complexType name="PersonasPrimaryKey">
+      <xs:sequence>
+         <xs:element name="dni" type="xs:double" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="string255">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="255"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

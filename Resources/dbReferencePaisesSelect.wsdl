@@ -1,0 +1,40 @@
+<wsdl:definitions
+     name="dbReferencePaisesSelect"
+     targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaisesSelect"
+     xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaisesSelect"
+     xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/"
+     xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaisesSelect"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+  <plt:partnerLinkType name="dbReferencePaisesSelect_plt" >
+    <plt:role name="dbReferencePaisesSelect_role" >
+      <plt:portType name="tns:dbReferencePaisesSelect_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+  <plt:partnerLinkType name="dbReferencePaisesSelect_plt" >
+    <plt:role name="dbReferencePaisesSelect_role" >
+      <plt:portType name="tns:dbReferencePaisesSelect_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaisesSelect" schemaLocation="dbReferencePaisesSelect.xsd" />
+      </schema>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferencePaisesSelect" schemaLocation="dbReferencePaisesSelect.xsd" />
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="dbReferencePaisesSelectInput_msg">
+        <wsdl:part name="dbReferencePaisesSelectInput_msg" element="db:dbReferencePaisesSelectInput"/>
+    </wsdl:message>
+    <wsdl:message name="dbReferencePaisesSelectOutputCollection_msg">
+        <wsdl:part name="dbReferencePaisesSelectOutputCollection" element="db:dbReferencePaisesSelectOutputCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="dbReferencePaisesSelect_ptt">
+        <wsdl:operation name="dbReferencePaisesSelect">
+            <wsdl:input message="tns:dbReferencePaisesSelectInput_msg"/>
+            <wsdl:output message="tns:dbReferencePaisesSelectOutputCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

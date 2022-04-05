@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:composite xmlns:ns="http://xmlns.oracle.com/sca/1.0">
+    <ns:reference>
+        <ns:interface src="BusinessService:SBPExamen/serviciosext/dbReferencePersonas"/>
+    </ns:reference>
+    <ns:reference>
+        <ns:interface src="BusinessService:SBPExamen/serviciosext/dbReferencePaisesAlta"/>
+    </ns:reference>
+    <ns:reference>
+        <ns:interface src="BusinessService:SBPExamen/serviciosext/dbReferencePaisesBaja"/>
+    </ns:reference>
+    <ns:reference>
+        <ns:interface src="BusinessService:SBPExamen/serviciosext/dbReferencePaises"/>
+    </ns:reference>
+    <ns:reference>
+        <ns:interface src="BusinessService:SBPExamen/serviciosext/dbReferencePaisesSelect"/>
+    </ns:reference>
+    <ns:reference>
+        <ns:interface src="BusinessService:SBPExamen/serviciosext/dbReferenceListapaises"/>
+    </ns:reference>
+</ns:composite>

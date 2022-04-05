@@ -1,0 +1,12 @@
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaisesAlta" name="dbReferencePaisesAlta-concrete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:import location="dbReferencePaisesAlta.wsdl" namespace="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaisesAlta"/>
+    <wsdl:binding name="dbReferencePaisesAlta_ptt-binding" type="dbr:dbReferencePaisesAlta_ptt" xmlns:dbr="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePaisesAlta">
+        <soap:binding style="document" transport="http://www.bea.com/wli/sb/transports/jca"/>
+        <wsdl:operation name="dbReferencePaisesAlta">
+            <soap:operation soapAction="dbReferencePaisesAlta"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+    </wsdl:binding>
+</wsdl:definitions>

@@ -1,0 +1,32 @@
+<wsdl:definitions
+     name="dbReferenceListapaises"
+     targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferenceListapaises"
+     xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferenceListapaises"
+     xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/"
+     xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferenceListapaises"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+  <plt:partnerLinkType name="dbReferenceListapaises_plt" >
+    <plt:role name="dbReferenceListapaises_role" >
+      <plt:portType name="tns:dbReferenceListapaises_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferenceListapaises" schemaLocation="dbReferenceListapaises.xsd" />
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="dbReferenceListapaisesInput_msg">
+        <wsdl:part name="dbReferenceListapaisesInput_msg" element="db:dbReferenceListapaisesInput"/>
+    </wsdl:message>
+    <wsdl:message name="dbReferenceListapaisesOutputCollection_msg">
+        <wsdl:part name="dbReferenceListapaisesOutputCollection" element="db:dbReferenceListapaisesOutputCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="dbReferenceListapaises_ptt">
+        <wsdl:operation name="dbReferenceListapaises">
+            <wsdl:input message="tns:dbReferenceListapaisesInput_msg"/>
+            <wsdl:output message="tns:dbReferenceListapaisesOutputCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

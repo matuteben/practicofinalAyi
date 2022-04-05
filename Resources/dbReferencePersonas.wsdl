@@ -1,0 +1,48 @@
+<wsdl:definitions
+     name="dbReferencePersonas"
+     targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePersonas"
+     xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/ServiceBusApplication1/SBPExamen/dbReferencePersonas"
+     xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/"
+     xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/dbReferencePersonas"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+  <plt:partnerLinkType name="dbReferencePersonas_plt" >
+    <plt:role name="dbReferencePersonas_role" >
+      <plt:portType name="tns:dbReferencePersonas_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/dbReferencePersonas" schemaLocation="dbReferencePersonas_table.xsd" />
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="dbReferencePersonasSelect_inputParameters">
+        <wsdl:part name="dbReferencePersonasSelect_inputParameters" element="top:dbReferencePersonasSelectInputParameters"/>
+    </wsdl:message>
+    <wsdl:message name="selectByPrimaryKey_inputParameters">
+        <wsdl:part name="selectByPrimaryKey_inputParameters" element="top:PersonasPrimaryKey"/>
+    </wsdl:message>
+    <wsdl:message name="PersonasCollection_msg">
+        <wsdl:part name="PersonasCollection" element="top:PersonasCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="dbReferencePersonas_ptt">
+        <wsdl:operation name="insert">
+            <wsdl:input message="tns:PersonasCollection_msg"/>
+        </wsdl:operation>
+        <wsdl:operation name="update">
+            <wsdl:input message="tns:PersonasCollection_msg"/>
+        </wsdl:operation>
+        <wsdl:operation name="delete">
+            <wsdl:input message="tns:PersonasCollection_msg"/>
+        </wsdl:operation>
+        <wsdl:operation name="dbReferencePersonasSelect">
+            <wsdl:input message="tns:dbReferencePersonasSelect_inputParameters"/>
+            <wsdl:output message="tns:PersonasCollection_msg"/>
+        </wsdl:operation>
+        <wsdl:operation name="selectByPrimaryKey">
+            <wsdl:input message="tns:selectByPrimaryKey_inputParameters"/>
+            <wsdl:output message="tns:PersonasCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

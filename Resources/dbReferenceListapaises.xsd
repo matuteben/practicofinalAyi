@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferenceListapaises" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/dbReferenceListapaises" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="dbReferenceListapaisesInput" type="dbReferenceListapaisesInput"/>
+   <xs:complexType name="dbReferenceListapaisesInput">
+      <xs:sequence/>
+   </xs:complexType>
+   <xs:element name="dbReferenceListapaisesOutputCollection" type="dbReferenceListapaisesOutputCollection"/>
+   <xs:complexType name="dbReferenceListapaisesOutputCollection">
+      <xs:sequence>
+         <xs:element name="dbReferenceListapaisesOutput" type="dbReferenceListapaisesOutput" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="dbReferenceListapaisesOutput">
+      <xs:sequence>
+         <xs:element name="ID_PAIS" type="xs:string" nillable="true"/>
+         <xs:element name="DESCRIPCION" type="xs:string" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

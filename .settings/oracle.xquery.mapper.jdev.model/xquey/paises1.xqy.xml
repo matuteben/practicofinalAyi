@@ -1,0 +1,6 @@
+<view_states>
+   <function arity="2" name="func">
+      <source_tree_view last.visible.row="6" last.visible.path="/sourceRoot[[0]]/dbReferenceListapaisesOutputCollection[[1]]/dbReferenceListapaisesOutput[[0]]/DESCRIPCION[[1]]" first.visible.path="/sourceRoot[[0]]/InputPais[[0]]" expanded.paths="/sourceRoot[[0]]/InputPais[[0]]&#xA;/sourceRoot[[0]]/dbReferenceListapaisesOutputCollection[[1]]&#xA;/sourceRoot[[0]]/dbReferenceListapaisesOutputCollection[[1]]/dbReferenceListapaisesOutput[[0]]" first.visible.row="0" selected.paths="/sourceRoot[[0]]/InputPais[[0]]"/>
+      <target_tree_view last.visible.row="7" last.visible.path="/TargetRoot[[0]]/Paises[[0]]/Conditional[[0]]/Pais[[1]]/descripcion[[1]]" first.visible.path="/TargetRoot[[0]]/Paises[[0]]" expanded.paths="/TargetRoot[[0]]/Paises[[0]]&#xA;/TargetRoot[[0]]/Paises[[0]]/Conditional[[0]]&#xA;/TargetRoot[[0]]/Paises[[0]]/Conditional[[0]]/Pais[[0]]&#xA;/TargetRoot[[0]]/Paises[[0]]/Conditional[[0]]/Pais[[1]]" first.visible.row="0" selected.paths="/TargetRoot[[0]]/Paises[[0]]/Conditional[[0]]"/>
+   </function>
+</view_states>

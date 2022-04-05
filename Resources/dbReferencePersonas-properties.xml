@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="APP.PERSONAS.APELLIDO:db_column_not_null">false</entry>
+   <entry key="APP.PERSONAS.PAIS:db_column_not_null">false</entry>
+   <entry key="APP.PERSONAS.APELLIDO:db_column_type">VARCHAR</entry>
+   <entry key="APP.PERSONAS:db_table_type">TABLE</entry>
+   <entry key="APP.PERSONAS.NOMBRE:db_column_type">VARCHAR</entry>
+   <entry key="return_single_result_set">false</entry>
+   <entry key="APP.PERSONAS.NOMBRE:db_column_not_null">false</entry>
+   <entry key="APP.PERSONAS.PAIS:db_column_type">VARCHAR</entry>
+   <entry key="APP.PERSONAS.APELLIDO:db_column_size">255</entry>
+   <entry key="APP.PERSONAS.DNI:db_column_not_null">true</entry>
+   <entry key="root_descriptor_alias">APP.PERSONAS</entry>
+   <entry key="APP.PERSONAS.NOMBRE:db_column_size">255</entry>
+   <entry key="APP.PERSONAS:db_column_3">PAIS</entry>
+   <entry key="APP.PERSONAS:db_column_2">APELLIDO</entry>
+   <entry key="APP.PERSONAS:db_column_1">NOMBRE</entry>
+   <entry key="APP.PERSONAS:db_column_0">DNI</entry>
+   <entry key="APP.PERSONAS.PAIS:db_column_size">255</entry>
+   <entry key="APP.PERSONAS.DNI:db_column_type">DOUBLE</entry>
+</properties>
